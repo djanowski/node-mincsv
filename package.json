@@ -1,6 +1,6 @@
 {
   "name": "mincsv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal CSV parser.",
   "main": "index.js",
   "scripts": {

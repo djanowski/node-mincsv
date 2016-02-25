@@ -2,7 +2,7 @@
 
 
 function parse(str) {
-  const lines      = str.split('\n');
+  const lines      = str.split('\n').filter(line => line);
   const headers    = parseLine(lines.shift());
   const rows       = lines.map(parseLine);
   const objectRows = rows.map(function(row) {
@@ -33,6 +33,9 @@ const FIELDS    = new RegExp(
 
 
 function parseLine(str) {
+  if (!str)
+    return null;
+
   const row = [];
   let   match;
   while (match = FIELDS.exec(str)){

@@ -16,3 +16,10 @@ test('parse with quotes', function(t) {
   t.equal(result[1].fullname, 'Henning Mankel');
   t.end();
 });
+
+test('ignore empty lines', function(t) {
+  const result = mincsv.parse('fullname\n"Umberto Eco"\n\n"Henning Mankel"');
+  t.equal(result[0].fullname, 'Umberto Eco');
+  t.equal(result[1].fullname, 'Henning Mankel');
+  t.end();
+});
