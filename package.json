@@ -1,0 +1,25 @@
+{
+  "name": "mincsv",
+  "version": "1.0.0",
+  "description": "Minimal CSV parser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djanowski/node-mincsv.git"
+  },
+  "keywords": [
+    "csv"
+  ],
+  "author": "Damian Janowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djanowski/node-mincsv/issues"
+  },
+  "homepage": "https://github.com/djanowski/node-mincsv#readme",
+  "devDependencies": {
+    "tape": "^4.4.0"
+  }
+}
